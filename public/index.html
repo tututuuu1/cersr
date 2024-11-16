@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <h1>欢迎来到我的网站</h1>
+                <p id="message">加载中...</p>
+                <button onclick="fetchMessage()">点击我</button>
+            </section>
+
+            <section id="about">
+                <h2>关于我们</h2>
+                <p>这是一个使用 Express 和 Vercel 搭建的示例网站。</p>
+            </section>
+
+            <section id="contact">
+                <h2>联系我们</h2>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <input type="email" placeholder="你的邮箱" required>
+                    <textarea placeholder="你的留言" required></textarea>
+                    <button type="submit">发送</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 我的网站. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
